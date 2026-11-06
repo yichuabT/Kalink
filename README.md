@@ -50,7 +50,7 @@ KALINK covers fundamental computer networking topics, including:
 You can explore the project locally by following these steps:
 
 1. Clone this repository:
-    git clone git@github.com:yichuabT/Kalink.git
+    *git clone git@github.com:yichuabT/Kalink.git*
 2. Open the downloaded project folder.
 3. Open index.html in your browser.
 
