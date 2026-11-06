@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="kalish networking teach">
+    <title>learn-networking</title>
+    <link rel="icon" type="image/png" href="../image/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../css/modules.css">
+    <link rel="stylesheet" href="../css/intro.css">
+</head>
+<body>
+    <article id="home">
+        <header>
+            <nav class="navbar">
+                <h1 class="logo">Kalink</h1>
+                <ul class="nav-menu">
+                    <li class="item"><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li class="item"><a href="../../modules.html" class="nav-link active">Modules</a></li>
+                    <li class="item"><a href="../../Resources.html" class="nav-link">Resource</a></li>
+                    <li class="item"><a href="../../questions.html" class="nav-link">Questions</a></li>
+                    <li class="item"><a href="../../about.html" class="nav-link">About</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <div class="modules-container">
+           <div class="main-card">
+                <h2>Computer Network Devices</h2>
+                <p>when we talk about computer network devices, the first device we will talk about is <span class="special-words">Modem.</span><br>
+                Modem is the device brings internet into our home. without modem there is no way to think about getting online.<br>
+            Modem stands for modulator demodulator. so the name exactly describes what it does, <span class="special-words">Modulation </span>and <span class="special-words">Demodulation</span><br>
+            when data comes from the <span class="special-words">ISP</span>(internet service provider), the modem demodulates it (converting analog signal to digital data)<br>
+            when we send the data back out to the internet the modem modulates it (converting digital data into analog)</p>
+
+            <p>The <span class="special-words">Router. </span><br>
+               this device job is managing the traffic. it receives the internet connection from the modem and shares with all our devices.
+               when all our device need internet the router makes it possible. it creates LAN(local area network) so it will assign local IP Address for each and keep track which device is which.
+                every devices can have different tasks and send or receive different packets or data. so now connect what you have learned about setting priority.<br>
+                the router uses <span class="special-words">Routing tables </span>to figure out the fastest path for data sharing. and it also uses
+                 <span class="special-words">NAT(network address translation) </span>so all of our devices can share one public IP address</p>
+            <p>The <span class="special-words">Switch. </span><br>It connects multiple wired devices within our network. when the computing devices we use are more than the number of router ports,
+                 that is where Switch comes to play.<br>Switch has 5 to 48 Ethernet ports, after connecting it to our router then all our devices can be connected to the switch. but what makes
+                  Switch intelligent is that is maintains MAC address table. so that it knows exactly which devices plugged to which port. when data comes in, Switch doesn't broadcast it to everyone it
+                   looks the destination MAC address and sends the data for the correct one.</p>
+            <p><span class="special-words">Hub. </span><br>It does similar job as Switch but the main difference is when the data comes in, it broadcast to everyone connected to the hub.</p>
+            <p>
+                <span class="special-words">Repeater. </span><br>
+                Repeater is the device used for regenerating signals. it allows us to connect devices together when the distance between devices are large.
+            </p>
+            <p>The <span class="special-words">Access Point. </span><br>Wireless access point(WAP), it creates WiFi coverage from  wired network connection.
+            the key difference from router is Access point doesn't route traffis or assign IP addresses they just provide wireless access to existing network</p>
+
+            <p>The <span class="special-words">Firewall. </span><br>We can call it our network security guard. it sits between our network and the internet and deciding what traffic gets in and what gets blocked. 
+            It compares every packet againest a set of security rule so based on that <span class="special-words">Unauthorized </span>access attempts, known malicious IP addresses, port scanning activity...
+             all get blocked befrore affecting our devices.</p>
+
+             <p><span class="special-words">NIC(network interface card).</span><br>This is the actual hardware that physically connects our device to a network.<br>
+            simply it is a translator sitting between devices and the network. every NIC has unique MAC address that's its hardware fingerprint. This is how networks identify individual devices.</p>
+            <p>See Figure-01</p>
+        </div>
+           <div class="diagram-card">
+                <img src="../image/network-devices.jpg" alt="" class="expandable-img">
+                <p>Figure-01</p>
+           </div>
+          
+           
+        </div>
+        <footer>
+            <div class="developer">&copy; <span id="year"> </span> Kaleab Tsegaye</div>
+            <div class="links">
+                <a href="https://github.com/yichuabT"><div class="github"><img src="../github-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://www.linkedin.com/in/Kaleab-tsegaye-691833449"><div class="linkden"><img src="../linkedin-round-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://t.me/yichuabT"><div class="telegram"><img src="../telegram-fill-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://x.com/yichuabT"><div class="twitter"><img src="../twitter-2-svgrepo-com.svg" alt=""></div></a>
+            </div>
+
+            <div class="goto-pages"><a href="#home">Back to top ↑</a></div>
+        </footer>
+    </article>
+
+
+    <div class="image-modal" id="imagemodal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <img id="expandedImage" src="" alt="">
+    </div>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

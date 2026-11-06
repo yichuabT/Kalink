@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="kalish networking teach">
+    <title>learn-networking</title>
+    <link rel="icon" type="image/png" href="../image/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../css/modules.css">
+    <link rel="stylesheet" href="../css/intro.css">
+</head>
+<body>
+    <article id="home">
+        <header>
+            <nav class="navbar">
+                <h1 class="logo">Kalink</h1>
+                <ul class="nav-menu">
+                    <li class="item"><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li class="item"><a href="../../modules.html" class="nav-link active">Modules</a></li>
+                    <li class="item"><a href="../../Resources.html" class="nav-link">Resource</a></li>
+                    <li class="item"><a href="../../questions.html" class="nav-link">Questions</a></li>
+                    <li class="item"><a href="../../about.html" class="nav-link">About</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <div class="modules-container">
+            
+           <div class="main-card">
+                <h2>Types of Computer Network..</h2>
+                <p>A computer network is a group of computers linked to each other that enables the computer to communicate 
+                    with another computer and share their resources, data, and applications. A computer network can be categorized 
+                    by its size. A computer network is mainly of four types<br>
+                    LAN(Local Area Network), PAN(Personal Area Network), MAN(Metropolitan Area Network), WAN(Wide Area Network)<br>
+                    But we will see including other types as much as possible.
+                </p>
+                <p>
+                    <span class="special-words">PAN(Personal Area Network)</span>.<br><br>
+                    PAN is the smallest network type. it connects personal devices 10 to 30 feet.<br>
+                    The most common PAN technology is Bluetooth. it is a short range by design. you cannot connect across a building but you can connect to the device around you.
+                    the speed is ~3Mbps
+                </p>
+                <p>
+                    <span class="special-words">LAN(Local Area Network)</span>.<br><br>
+                    We can call our home network, office network LAN.<br>
+                    It connects devices within a single building or small area (1km). LAN uses two main technologies: wired connections using Ethernet and wireless connections using WiFi.
+                    Ethernet LANs run anywhere from 1Gbps - 100Gbps so speed is a big advantage here.
+                </p>
+                <p>
+                    <span class="special-words">CAN(Campus Area Network)</span>.<br><br>
+                    It is bigger than LAN . CAN uses fiber optic technology because of its high speed over longer distances regular Ethernet can't handle.<br>
+                    CAN connects multiple buildings within limited area(1 - 5km). example: University campuses, hospitals, military bases...multiple buildings, one organization, one network.<br>
+                    Each building has its own LAN, so CAN connects all LANs together using high speed <span class="special-words">fiber optic </span> cable.
+                </p>
+                <p>
+                    <span class="special-words">MAN(Metropolitan Area Network)</span>.<br><br>
+                    This network covers an entire city or metropolitan area (5 -  50km). it connects multiple LANs across a city.<br>
+                    MAN is used in communication between the banks in a city, Airline Reservation, communication in the military, college within a city . . . <br>
+                    MAN uses high-speed fiber optic cable, they are designed to handle massive amount of data because they are serving large number of users.
+
+                </p>
+                <p>
+                    <span class="special-words">WAN(wide Area Network)</span>.<br><br>
+                    WAN connects networks across countries or continents the entire world. It connects millions of smaller networks LANs and MANs across the entire world.<br>
+                    WAN uses a mix of technologies: Fiber optic cables running across ocean floors, Satellite connections, telephone lines..<br>
+                    Note: when you say the network, it means almost LAN. when you say the Internet, it means WAN(the global connectivity).
+                </p>
+                <p>
+                    <span class="special-words">SAN(Storage Area Network)</span>.<br><br>
+                    This one is not about the geographic size it covers, but the purpose!. It is specialized high speed network connects servers to storage devices.<br>
+                    Data centers and Enterprises mostly use SAN. Fiber Channel is the most common technology SAN use running speeds from 2GB up to 128Gbps.<br>
+                    The key advantage is flexibility and performance.
+                </p>
+                <p>
+                    <span class="special-words">VPN(Virtual Private Network)</span>.<br><br>
+                    What makes this one completely different from other types of computer network is, it is not a physical network, it is virtual network.<br>
+                    It creates a secure encrypted tunnel over an existing network (Internet). when we connect to VPN server all our internet traffic gets encrypted and routed through the server.
+                    when we visit website, the website see the VPN server's location and IP address not ours.
+                    Note that, ISP can see that we are using VPN. and if you are connected to VPN server doesn't mean it replaces other types of network. you are still on LAN or WAN and the VPN adds privacy and security. (it layers on top.)
+                </p>
+                <p>
+                    See Figure 01
+                </p>
+            </div>
+           <div class="diagram-card">
+                <img src="../image/types_of_comp_net.jpg" alt="" class="expandable-img">
+                <p>Figure-01</p>
+           </div>
+          
+           
+        </div>
+        <footer>
+            <div class="developer">&copy; <span id="year"> </span> Kaleab Tsegaye</div>
+            <div class="links">
+                <a href="https://github.com/yichuabT"><div class="github"><img src="../github-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://www.linkedin.com/in/Kaleab-tsegaye-691833449"><div class="linkden"><img src="../linkedin-round-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://t.me/yichuabT"><div class="telegram"><img src="../telegram-fill-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://x.com/yichuabT"><div class="twitter"><img src="../twitter-2-svgrepo-com.svg" alt=""></div></a>
+            </div>
+
+            <div class="goto-pages"><a href="#home">Back to top ↑</a></div>
+        </footer>
+    </article>
+
+
+
+    <div class="image-modal" id="imagemodal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <img id="expandedImage" src="" alt="">
+    </div>
+    <script src="../../script.js"></script>
+</body>
+</html>

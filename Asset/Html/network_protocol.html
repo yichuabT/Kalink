@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="kalish networking teach">
+    <title>learn-networking</title>
+    <link rel="icon" type="image/png" href="../image/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../css/modules.css">
+    <link rel="stylesheet" href="../css/intro.css">
+</head>
+<body>
+    <article id="home">
+        <header>
+            <nav class="navbar">
+                <h1 class="logo">Kalink</h1>
+                <ul class="nav-menu">
+                    <li class="item"><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li class="item"><a href="../../modules.html" class="nav-link active">Modules</a></li>
+                    <li class="item"><a href="../../Resources.html" class="nav-link">Resource</a></li>
+                    <li class="item"><a href="../../questions.html" class="nav-link">Questions</a></li>
+                    <li class="item"><a href="../../about.html" class="nav-link">About</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <div class="modules-container">
+            
+           <div class="main-card">
+                <h2>Computer Network Protocols.</h2>
+                <p>
+                    Protocols are a set of rules that govern data communication.<br>
+                    It determines: what is communicated, how it is communicated, and when it is communicated in the network.<br>
+                    Now let's see some very common Network Protocols one by one.
+                </p>
+                <p>
+                    <span class="special-words">DHCP(Dynamic Host Configuration Protocol)</span>.<br><br>
+                    The main job of this protocol is giving an IP address automatically to our devices when they connect to a network.<br><br>
+                    Why we need DHCP?<br> 
+                    So without DHCP we should give IP address to all our devices manually (by typing). this is normal for small network or just 
+                    for home network, but what if you are a <span class="special-words">Network Admin</span> in very large company? manually 
+                    typing IP address to all devices is samsthing unthinkable right? so this is why exactly we need DHCP. because as we said before 
+                    it can assign IP address to all devices connected to the network automatically.
+                </p>
+                <p>
+                    <span class="special-words">DNS(Domain Name System)</span>.<br><br>
+                    What do you think happening when you type <span class="example-words"> www.Google.com </span>on your browser?<br>
+                    basically computer did not understand the domain name you are looking for. so there should be something that can
+                    translate what you typed on your browser to what computer actually understand, that protocol is DNS.<br><br>
+                    DNS finds the IP address of <span class="example-words">www.google.com</span> so that your browser can access Google's server.
+                    When you type some website's name on your browser, your computer sends a DNS query to DNS server through <span class="special-words">port 53</span>.
+                    and the server read the domain name and translate it to IP number and send back to your browser so your browser uses that IP to connect.
+                </p>
+                <p>
+                    <span class="special-words">HTTP(Hypertext Transfer Protocol)</span>.<br><br>
+                    This is how our browser request web pages to servers. when we type URL then HTTP request over <span class="special-words">port 80</span> to server, then the server will send back HTML files to our browser.<br>
+                    Early days, everyone should see <span class="special-words">http://</span> in the address bar when they visit website. but these days almost every websites moved away from HTTP.<br>
+                    The reason is http sends everything in plain text (no encryption). Notice that <span class="special-words">No Encryption</span> is no security. so here is HTTPS comes to play.
+                </p>
+                <p>
+                    <span class="special-words">HTTPS(Hypertext Transfer Protocol Secure)</span>.<br><br>
+                    It does almost exactly what HTTP does, but it adds encryption. It uses <span class="special-words">port 443</span> so anytime you visited a website through HTTPS all your communication between your browser and the server is encrypted.<br>
+
+                </p>
+                <p>
+                    <span class="special-words">TCP(Transmission Control Protocol)</span>.<br><br>
+                    TCP ensures data is delivered completely and in the right order.
+                    It works at the lower level of HTTP or HTTPS. it is the delivery method under those protocols.<br>
+                    TCP protocol is based on <span class="special-words">three way handshake</span>. there are three steps called:<br>
+                    1. SYN: stands for synchronize sequence number. simply the client computer sending request for connection.<br>
+                    2. SYN/ACK: the server acknowledging the request.<br>
+                    3. ACK: the client responds the acknowledge to the server.(connection is established)<br><br>
+
+                    When you download file, TCP breaks that data into packet and send them and confirms all are arrived. if one of them gets lost TCP automatically resends it.<br>
+                    It is a connection first protocol.<br>
+                    For live video or Gaming where speed matters more than reliablity, TCP is slower because of all error checking and confirmation. every packets needs acknowledgment. then here is UDP comes to play.
+                </p>
+                <p>
+                    <span class="special-words">UDP(User Datagram Protocol)</span>.<br><br>
+                    This protocol is the opposite of TCP.<br>
+                    It doesn't establish a connection, it doesn't confirm delivery.<br>
+                    Unlike TCP if the data packet gets lost it doesn't care. so this is what makes UDP faster than TCP. for anything realtime UDP is the best.<br>
+                    If you are transferring important files or needs guarantee delivery UDP is the wrong choice.
+                </p>
+                <p>
+                    <span class="special-words">SMTP(Simple Mail Transfer Protocol)</span>.<br><br>
+                    It is specifically for outgoing email.<br>
+                    
+                    It is the postal service of the internet moving messages from sender to receiver. it uses <span class="special-words">port 25</span> for server to server communication or <span class="special-words">port 587</span> for sending our email client, 
+                    <span class="special-words">port 465</span> is used for secure SMTP with encryption.<br>
+                    SMTP handles sending and IMAP & POP3 handles receiving.
+                </p>
+                <p>
+                    <span class="special-words">FTP(File Transfer Protocol)</span><br><br>
+                    It is specifically designed for moving files. it uses two ports : <span class="special-words">port 21 </span> for commands and control, <span class="special-words">port 20</span> for the actual data transfer.<br>
+                    Note that, FTP sends everything in plaintext (usernames, passwords...) or no Encryption by default this is why SFTP AND FTPS exist. but regular FTP is used widely.
+                </p>
+                <p>
+                    See Figure 01
+                </p>
+            </div>
+           <div class="diagram-card">
+                <img src="../image/protocols.jpg" alt="" class="expandable-img">
+                <p>Figure-01</p>
+           </div>
+          
+           
+        </div>
+        <footer>
+            <div class="developer">&copy; <span id="year"> </span> Kaleab Tsegaye</div>
+            <div class="links">
+                <a href="https://github.com/yichuabT"><div class="github"><img src="../github-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://www.linkedin.com/in/Kaleab-tsegaye-691833449"><div class="linkden"><img src="../linkedin-round-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://t.me/yichuabT"><div class="telegram"><img src="../telegram-fill-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://x.com/yichuabT"><div class="twitter"><img src="../twitter-2-svgrepo-com.svg" alt=""></div></a>
+            </div>
+
+            <div class="goto-pages"><a href="#home">Back to top ↑</a></div>
+        </footer>
+    </article>
+
+
+
+    <div class="image-modal" id="imagemodal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <img id="expandedImage" src="" alt="">
+    </div>
+    <script src="../../script.js"></script>
+</body>
+</html>

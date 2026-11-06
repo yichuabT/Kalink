@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="kalish networking teach">
+    <title>learn-networking</title>
+    <link rel="icon" type="image/png" href="../image/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../css/modules.css">
+    <link rel="stylesheet" href="../css/intro.css">
+</head>
+<body>
+    <article id="home">
+        <header>
+            <nav class="navbar">
+                <h1 class="logo">Kalink</h1>
+                <ul class="nav-menu">
+                    <li class="item"><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li class="item"><a href="../../modules.html" class="nav-link active">Modules</a></li>
+                    <li class="item"><a href="../../Resources.html" class="nav-link">Resource</a></li>
+                    <li class="item"><a href="../../questions.html" class="nav-link">Questions</a></li>
+                    <li class="item"><a href="../../about.html" class="nav-link">About</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <div class="modules-container">
+            
+           <div class="main-card">
+            <h2>what is Network Topology?</h2>
+            Network topology is how computers connect to one another in a computer network.<br>
+            There are two types of Network topology: Physical topology and Logical topology.<br><br>
+
+            <span class="special-words">Physical Topology</span>.<br>
+            It describes the way computers connect with the help of cables.<br>
+            <span class="special-words">Logical Topology</span>.<br>
+            It describes the way data flows from one computer to another within a computer network.<br><br>
+            The most commonly used computer network to interconnect physically distributed computers is<span class="special-words"> LAN</span>. <br>
+            There are different topologies this network has: Star Topology, Bus Topology, Ring Topology, Mesh Topology, and Hybrid Topology.<br><br>
+            <span class="special-words">Bus Topology</span>.<br>
+            Computers connect to shared central cable, called bus with taps and drop lines. shared means all connected computers use the same cable for data frame transmission<br>
+            Taps are the connectors and drop lines are the cables running in between the computers and the bus.<br>
+            In the bus topology, if one computer sends a message to another computer the other connected computers will also receive the frame. but only the specific or targeted computer 
+            accepts the message and others reject by checking the destination MAC address in the received frame.<br>
+            Bus topology requires less cabling so that it is easy to install and less expensive to implement.<br> 
+            as we discussed before, all computers are connected to the central cable, that means if the central cable fails, the whole network is down. so you can say Bus topology Advantage is less cabling and its
+            disadvantage is limited computers can share the network without problem and also less fault tolerance is its disadvantage.<br><br>
+          
+            <span class="special-words">Star Topology</span>.<br>
+            Computer connect to the central device called, switch or Hub with point to point communication links.<br>
+            In this topology, if one computer wants to send a data frame to another computer, it is first routed to the central device. then the central device is either <span class="special-words">Broadcast</span>
+             or <span class="special-words">Unicast</span>, towards the destination computer based on the type of central device used.<br>
+            to understand the central device( what Unicast or broadcast means) open the computer network devices module.<br>
+
+            The Advantage of star topology is: only one input/output port and one cable is needed for each device to connect to several devices (less expensive than mesh topology),
+            also it is easy to configure, if one cable connected to the central device fails it will not affect the other network (fault tolerance).<br>
+            The disadvantage of star is, if the central device fails, all network will down.<br><br>
+
+            <span class="special-words">Ring Topology</span>.<br>
+            In this topology, each computers connect to two adjecent computers to form a ring. Data transmitted by one computer moves from one computer to another in circular fashion to reach its final destination.<br>
+            The Advantage of ring topology are easy installation, less cabling, and easy to troubleshoot.<br>
+            The disadvantage is, it makes data transmission slower, since all computers connect to form a closed loop, one fault paralyzes the whole network.<br><br>
+
+            <span class="special-words">Mesh Topology</span>.<br>
+            Unlike star or ring topologies that rely on a central hub or a single sequential loop, mesh network creates multiple redundant pathways for data to travel.<br>
+            Advantages: High redundancy and fault tolerance and Scalable and supports a high volume of traffic.<br>
+
+            Considerations: Complex to design and implement and Expensive due to the high number of connections.<br><br>
+            <span class="special-words">Hybrid Topology</span>.<br>
+            Hybrid topology is a setup that combines two or more different basic network layouts. Such as star, ring or bus topologies into a single integrated system.<br>
+            Advantages: Combines the strengths of different topologies and Offers flexibility and scalability.<br>
+            Considerations: Can be more complex to manage and Cost implications based on the combination chosen.<br>
+             <p>
+                See Figure 01
+             </p>
+
+            </div>
+           <div class="diagram-card">
+                <img src="../image/topology.jpg" alt="" class="expandable-img">
+                <p>Figure-01</p>
+           </div>
+          
+           
+        </div>
+        <footer>
+            <div class="developer">&copy; <span id="year"> </span> Kaleab Tsegaye</div>
+            <div class="links">
+                <a href="https://github.com/yichuabT"><div class="github"><img src="../github-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://www.linkedin.com/in/Kaleab-tsegaye-691833449"><div class="linkden"><img src="../linkedin-round-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://t.me/yichuabT"><div class="telegram"><img src="../telegram-fill-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://x.com/yichuabT"><div class="twitter"><img src="../twitter-2-svgrepo-com.svg" alt=""></div></a>
+            </div>
+
+            <div class="goto-pages"><a href="#home">Back to top ↑</a></div>
+        </footer>
+    </article>
+
+
+    <div class="image-modal" id="imagemodal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <img id="expandedImage" src="" alt="">
+    </div>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

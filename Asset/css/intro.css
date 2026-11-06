@@ -1,0 +1,74 @@
+body{
+    background: rgb(17, 32, 53);
+    color: aliceblue;
+    height: 100vh;
+    width: 100%;
+}
+
+.modules-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2em auto;
+    width: 90%;
+}
+
+.main-card{
+    background-color: rgb(51, 72, 95);
+    border: none;
+    border-radius: 10px;
+    padding: 1em;
+    width: 40rem;
+}
+.diagram-card{
+    width: 400px;
+    background-color: rgb(34, 52, 79);
+    border-radius: 10px;
+    border-bottom: 2px solid #01c546;
+    border-left: 2px solid #01c546;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.diagram-card img{
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    object-fit: cover;
+    padding: 0;
+    border-radius: 10px;
+}
+.diagram-card h3, p{
+    padding: 1em .5em;
+}
+.diagram-card p{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.models-option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: .5em;
+    text-align: center;
+}
+.models-option a{
+    text-decoration: none;
+    color: #fff;
+}
+.models-option .click-me:hover{
+    transform: none;
+    filter: drop-shadow(0 0 6px #55e4f7);
+}
+@media(width < 17em){
+    .models-option{
+        flex-direction: column;
+        gap: .5rem;
+    }
+}

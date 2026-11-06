@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="kalish networking teach">
+    <title>learn-networking</title>
+    <link rel="icon" type="image/png" href="../image/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../css/modules.css">
+    <link rel="stylesheet" href="../css/intro.css">
+</head>
+<body>
+    <article id="home">
+        <header>
+            <nav class="navbar">
+                <h1 class="logo">Kalink</h1>
+                <ul class="nav-menu">
+                    <li class="item"><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li class="item"><a href="../../modules.html" class="nav-link active">Modules</a></li>
+                    <li class="item"><a href="../../Resources.html" class="nav-link">Resource</a></li>
+                    <li class="item"><a href="../../questions.html" class="nav-link">Questions</a></li>
+                    <li class="item"><a href="../../about.html" class="nav-link">About</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <div class="models-option">
+            <a href="models.html"><h3 class="click-me">OSI</h3></a><a href="models.html"><h3 class="click-me">TCP/IP</h3></a>
+        </div>
+        <div class="modules-container">
+            
+           <div class="main-card">
+                <h2>Computer Network Models.</h2>
+                <p>Network Model is a framework dividing network communication into layers, each with its own job and rule.<br>
+                And Layer is one stage in the model doing one job. It uses the layer below and serves the layer above.</p>
+            <p>In general there are two types of networking Models:<br> <span class="special-words">OSI(Open System Interconnection)</span> and
+                 <span class="special-words">TCP/IP(Transmission Control Protocol/Internet Protocol)</span>
+            </p>
+
+                <p>
+                    <span class="special-words">TCP/IP</span> model.<br><br>
+                    TCP/IP suite, refers to a group of protocols used on modern networks. These protocols provide a end-to-end connection by specifying how data should be segmented, addressed, and routed across network<br>
+                    TCP/IP only have four layers, 4. <span class="special-words">Application </span>3. <span class="special-words">Transport </span>
+                    2. <span class="special-words">Internet </span><br> 1. <span class="special-words">Link </span>
+                </p>
+               <p>
+                See Figure 01
+               </p>
+            </div>
+           <div class="diagram-card">
+                <img src="../image/network-model.jpg" alt="" class="expandable-img">
+                <p>Figure-01</p>
+           </div>
+          
+           <div class="main-card">
+                <p>
+                    4. <span class="special-words">Application</span><br><br>
+                    This layer of TCP/IP model is equivalent to the Application, Presentation, and Session layers of OSI model.<br>
+                    It handles many functions. e.g Data generation, Compression, Conversion, Translation, and encryption. it also handles session establishment, maintenance and termination.<br>
+                    Note that this layer of TCP/IP model is doing alone what three layers of OSI model does.<br>
+                    Common protocols include: HTTP, Telnet, SSL, FTP, DNS......
+                </p>
+                <p>
+                    3. <span class="special-words">Transport</span><br><br>
+                    This layer is the same as Transport layer of the OSI model.<br>
+                    Main functions are data segmentation, flow control, and error checking. as we discussed on OSI model section, common protocols are TCP and UDP.
+                </p>
+               <p>
+                  2. <span class="special-words">Internet</span><br><br>
+                    This layer of TCP/IP is the same as Network layer of OSI model. main functions are IP addressing and routing.<br>
+                    Common protocols used on this layer are: IPV4, IPV6, ICMP .....<br>
+                    Communications would be limited only on LAN(local area network) without this layer. 
+               </p>
+               <p>
+                    1. <span class="special-words">Link</span><br><br>
+                   This layer of TCP/IP model combines both Datalink layer and Physical layer of the OSI model.<br>
+                   The main function of Link layer is frame making, MAC addressing, frame switching, and physical cabling.<br>
+                    Common protocols are: ARP, Ethernet, Token ring, WiFi . . . 
+                   </br>
+               </p>
+               <p>
+                See Figure 02
+               </p>
+            </div>
+           <div class="diagram-card">
+                <img src="../image/network-model.jpg" alt="" class="expandable-img">
+                <p>Figure-02</p>
+           </div>
+        </div>
+        <footer>
+            <div class="developer">&copy; <span id="year"> </span> Kaleab Tsegaye</div>
+            <div class="links">
+                <a href="https://github.com/yichuabT"><div class="github"><img src="../github-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://www.linkedin.com/in/Kaleab-tsegaye-691833449"><div class="linkden"><img src="../linkedin-round-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://t.me/yichuabT"><div class="telegram"><img src="../telegram-fill-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://x.com/yichuabT"><div class="twitter"><img src="../twitter-2-svgrepo-com.svg" alt=""></div></a>
+            </div>
+
+            <div class="goto-pages"><a href="#home">Back to top ↑</a></div>
+        </footer>
+    </article>
+
+
+
+    <div class="image-modal" id="imagemodal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <img id="expandedImage" src="" alt="">
+    </div>
+    <script src="../../script.js"></script>
+</body>
+</html>

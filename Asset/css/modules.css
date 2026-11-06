@@ -1,0 +1,77 @@
+body{
+    background: rgb(17, 32, 53);
+    color: aliceblue;
+    height: 100vh;
+    width: 100%;
+}
+
+.modules-container, 
+.resource-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2em auto;
+    width: 90%;
+}
+
+
+.modules-container .module-card img,
+.resource-container .resource-card img{
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    object-fit: cover;
+    padding: 0;
+    border-radius: 10px;
+}
+.modules-container .module-card,
+.resource-container .resource-card{
+    width: 300px;
+    background-color: rgb(34, 52, 79);
+    border-radius: 10px;
+    border-bottom: 2px solid #01c546;
+    border-left: 2px solid #01c546;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.modules-container .module-card:hover,
+.resource-container .resource-card:hover{
+    transform: translateY(-10px);
+    filter: drop-shadow(0 0 5px #01c546);
+}
+.modules-container .module-card h2,
+.resource-container .resource-card h2{
+    margin: .5em 0;
+    padding: 0 .5em;
+
+}
+.modules-container .card-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .5em .5em .5em;
+}
+.resource-container .card-bottom{
+    padding: 0 .5em .5em .5em;
+}
+.modules-container .card-bottom a,
+.resource-container .card-bottom a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.resource-container .ink{
+    text-align: end;
+    margin-top: 1em;
+}
+.modules-container .ink a{
+    color: #01c546;
+
+}
+.resource-container .ink a{
+    color: #01c546;
+
+}

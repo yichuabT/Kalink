@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="kalish networking teach">
+    <title>learn-networking</title>
+    <link rel="icon" type="image/png" href="../image/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../css/modules.css">
+    <link rel="stylesheet" href="../css/intro.css">
+</head>
+<body>
+    <article id="home">
+        <header>
+            <nav class="navbar">
+                <h1 class="logo">Kalink</h1>
+                <ul class="nav-menu">
+                    <li class="item"><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li class="item"><a href="../../modules.html" class="nav-link active">Modules</a></li>
+                    <li class="item"><a href="../../Resources.html" class="nav-link">Resource</a></li>
+                    <li class="item"><a href="../../questions.html" class="nav-link">Questions</a></li>
+                    <li class="item"><a href="../../about.html" class="nav-link">About</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <div class="modules-container">
+            
+           <div class="main-card">
+            <h2>what is Network Security?</h2>
+            <br>
+            Network security involves the protection of our network infrastructure and data carries. 
+            This includes: preventing unauthorized access to sensitive information and resources.<br>
+            The primary goal of Network security are maintaining confidentiality, ensuring data integrity, and guaranteeing availability of services.<br>
+            It is a combination of hardware, software, and policies work together to safeguard our digital assets.<br><br> 
+            
+            <h2>Common Network Security Threats</h2>
+            <br>
+
+            <span class="special-words">Unauthorized Access</span>.<br>
+            This involves actions such as: <br>
+            Brute force attacks - where attackers try to enumerate passwords, exploit new authentication methods using stolen 
+            credentials, escalating privileges to gain authorized entry.<br><br>
+            <span class="special-words">Malware</span>.<br>
+            This involves malicious software including: viruses, Trojans and backdoors, Ransomware, Spyware and keyloggers.<br>
+            All are designed to harm our system.<br><br>
+            <span class="special-words">Social Engineering</span>.<br>
+            This involves manipulating individuals through: Phishing attacks, Pretexting, Baiting, or Tailgating to gain access to sensitive information or system.<br><br>
+            <p>
+                See Figure 01
+            </p>                       
+            </div>
+           <div class="diagram-card">
+                <img src="../image/common-threat.jpg" alt="" class="expandable-img">
+                <p>Figure-01</p>
+           </div>
+          <div class="main-card">
+            <h2>Common Network Vulnerabilities</h2>
+            <br>
+            <span class="special-words">Key Vulnerability Categories</span>.<br><br>
+            Unpatched software and systems - systems that not have been updated with the latest security patches are susceptibls to exploitation.<br><br>
+            Weak or default passwords - unchanged or easy to guess passwords provides an easy entry point for hackers.<br><br>
+            Misconfigured security settings - incorrectly configured security settings leave systems exposed.<br><br>
+            Insecure protocols - using protocols such as: HTTP, FTP or Telnet which transmit data without encryption can lead to data interception.<br><br>
+            <p>
+                See Figure 02
+            </p>
+
+          </div>
+           <div class="diagram-card">
+                <img src="../image/vulnur.jpg" alt="" class="expandable-img">
+                <p>Figure-02</p>
+           </div>
+
+          <div class="main-card"> 
+            <h2>Network Security Countermeasures</h2>
+            <br>
+            <span class="special-words">Perimeter Defense</span>.<br><br>
+           Firewalls(Hardware/Software)- Impliment firewall to control network traffic.<br>
+           Intrusion Detection and prevention Systems - to identify and block malecious aactivities.<br>
+           DMZ architecture - establish demiliterize zone to isolate public facing servers.<br>
+           Network Segmentation - ensure network segmentation to limit the inpact of potential briches.<br>
+            <br>
+            <span class="special-words">Access Controls</span>.<br><br>
+           It is very important for strong authentication methods including multi-factor authentication.<br>
+           Role-based access control - employee role-based asscess control to manage user permissions and also apply principle of Least privilage.<br>
+           Network Access Contol(NAC) - to control device access to the network.<br><br>
+
+            <span class="special-words">Encryption and Privacy</span>.<br><br>
+            TLS/SSL - use transport layer security or secure sockets layer secure communication.<br>
+            VPN - implement virtual private network for secure remote access.<br>
+            Employe Data Encryption at rest and utilize Public key infrastructure (PKI) for certificate management.<br>
+
+            <p>
+                See Figure 03
+            </p>
+          </div>
+           <div class="diagram-card">
+                <img src="../image/countermesure.jpg" alt="" class="expandable-img">
+                <p>Figure-03</p>
+           </div>
+        </div>
+        <footer>
+            <div class="developer">&copy; <span id="year"> </span> Kaleab Tsegaye</div>
+            <div class="links">
+                <a href="https://github.com/yichuabT"><div class="github"><img src="../github-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://www.linkedin.com/in/Kaleab-tsegaye-691833449"><div class="linkden"><img src="../linkedin-round-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://t.me/yichuabT"><div class="telegram"><img src="../telegram-fill-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://x.com/yichuabT"><div class="twitter"><img src="../twitter-2-svgrepo-com.svg" alt=""></div></a>
+            </div>
+
+            <div class="goto-pages"><a href="#home">Back to top ↑</a></div>
+        </footer>
+    </article>
+
+
+
+    <div class="image-modal" id="imagemodal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <img id="expandedImage" src="" alt="">
+    </div>
+    <script src="../../script.js"></script>
+</body>
+</html>

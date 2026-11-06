@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="kalish networking teach">
+    <title>learn-networking</title>
+    <link rel="icon" type="image/png" href="../image/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../css/modules.css">
+    <link rel="stylesheet" href="../css/intro.css">
+</head>
+<body>
+    <article id="home">
+        <header>
+            <nav class="navbar">
+                <h1 class="logo">Kalink</h1>
+                <ul class="nav-menu">
+                    <li class="item"><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li class="item"><a href="../../modules.html" class="nav-link active">Modules</a></li>
+                    <li class="item"><a href="../../Resources.html" class="nav-link">Resource</a></li>
+                    <li class="item"><a href="../../questions.html" class="nav-link">Questions</a></li>
+                    <li class="item"><a href="../../about.html" class="nav-link">About</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <div class="modules-container">
+            
+           <div class="main-card">
+                <h2>What is IP Address?</h2>
+                <p>
+                    IP address is the identity of each host. every host or devices must have IP address in order to
+                    communicate on internet.<br> we need IP address in order to send or receive any packets on a network.
+                    when we send a request to some website there will be a source IP address and 
+                    Destination IP address stamped to the packet. also when the server responds the same
+                    thing will happen. the source and the Destination IP address means the sender and receiver IP address.
+                </p>
+                <p> There are two types of IP address(Internet Protocol Address):<br>
+                    <span class="special-words">IPv4</span> and <span class="special-words">IPv6</span>
+                </p>
+                <h3>what is IPv4?</h3>
+                <p>
+                    IPv4 has four octet separated by dots(.) e.g. <span class="example-words"> K.K.K.K</span><br>
+                Each octet will have 8 0s and 1s. the range for each octet is 0 - 255 but this decimal numbers is not computer
+                understandable. so these decimal numbers will be converted to Binary digit (0 and 1). e.g <span class="example-words">
+                     0 - 255 </span> can be written in binary <span class="example-words">00000000 - 11111111</span>
+                you can assume 1 as <span class="special-words"> on </span> and 0 as <span class="special-words"> off </span> 
+                that is basically how computer understand 0s and 1s.<br>
+                as we see each octets represented by eight binary digits, all IPv4 address represented by sequence of 
+                <span class="example-words"> 32 </span>0s and 1s or technically 32-bit. IPv4 is a 32-bit address that means all available
+                IPv4 address is 2^32 that means ~ 4,294,967,296 devices can get IPv4 address but as you guessed it is not possible
+                 to address all devices across the world, now a days world population is ~ more than 7 Billion. so this is why IPV6 
+                created.
+                </p>
+                <h3>what is IPv6?</h3>
+                <p>
+                    IPv6 is 128-bit IP address. simply IPv6 written as a group of eight <span class="special-words">Hexadecimal</span> 
+                    numbers separated with colons.<br>
+                    e.g. <span class="example-words"> 211:0DF3:CB20:FF02: 0000:0000:0000:0000 </span> but in computer understanding
+                    form can be written by sequence of 128 1s and 0s.<br>
+                    all available addresses can be given for devices all over the world by IPv6 is 2^128. which means ~ 34028236692 093846337460743 1768211456.<br>
+                    Now as you guessed it there is no problem with addressing all devices all over the world to make them connected to internet.
+                     because there are more than enough IP addresses using IPv6.
+
+                    
+                </p>
+                <p>  You can check your IP Address just by asking Google. (syntax : What is my IP Address.).</p>
+                <p>
+                    IP address can be classified by: Dynamic IP address and Static IP address.<br>
+                <span class="special-words">Dynamic IP Address</span><br>
+                when you connect your devices to the Internet, ISP(internet service provider) will provides you an IP address from the
+                 range of available IP address so you can connect your device to the internet.
+                 then by next time when you connect to the internet, ISP will provides you different IP address from you priviously given.
+                  so IP address keeps on changing every time you connec your devices to the 
+                 internet, they are called Dynamic IP address.
+                </p>
+                <p>
+                     <span class="special-words">Static IP Address</span><br>
+                 The ststic IP addresses never change or they are permanent internet addresses. static IP addresses most commonly used by DNS servers.
+                  you can understand what <span class="special-words">DNS</span> is on Computer network protocols module.<br>
+                 Static IP addresses provides information: what device located in which country, which city, and which ISP provides the connection to that device. 
+                </p>
+                <p>
+                    See Figure 01
+                </p>
+            </div>
+           <div class="diagram-card">
+                <img src="../image/ip_address.jpg" alt="" class="expandable-img">
+                <p>Figure-01</p>
+           </div>
+          
+           
+        </div>
+        <footer>
+            <div class="developer">&copy; <span id="year"> </span> Kaleab Tsegaye</div>
+            <div class="links">
+                <a href="https://github.com/yichuabT"><div class="github"><img src="../github-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://www.linkedin.com/in/Kaleab-tsegaye-691833449"><div class="linkden"><img src="../linkedin-round-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://t.me/yichuabT"><div class="telegram"><img src="../telegram-fill-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://x.com/yichuabT"><div class="twitter"><img src="../twitter-2-svgrepo-com.svg" alt=""></div></a>
+            </div>
+
+            <div class="goto-pages"><a href="#home">Back to top ↑</a></div>
+        </footer>
+    </article>
+
+
+    <div class="image-modal" id="imagemodal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <img id="expandedImage" src="" alt="">
+    </div>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

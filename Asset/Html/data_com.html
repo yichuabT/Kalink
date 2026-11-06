@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="kalish networking teach">
+    <title>learn-networking</title>
+    <link rel="icon" type="image/png" href="../image/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../css/modules.css">
+    <link rel="stylesheet" href="../css/intro.css">
+</head>
+<body>
+    <article id="home">
+        <header>
+            <nav class="navbar">
+                <h1 class="logo">Kalink</h1>
+                <ul class="nav-menu">
+                    <li class="item"><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li class="item"><a href="../../modules.html" class="nav-link active">Modules</a></li>
+                    <li class="item"><a href="../../Resources.html" class="nav-link">Resource</a></li>
+                    <li class="item"><a href="../../questions.html" class="nav-link">Questions</a></li>
+                    <li class="item"><a href="../../about.html" class="nav-link">About</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <div class="modules-container">
+            
+           <div class="main-card">
+                <h2>Data Communication in Computer Network.</h2>
+                <p>
+                    Data communication is the exchange of data between two or 
+                    more computing devices connected to the Network via transmission medium(e.g. cable).<br>
+                
+                </p>
+                <p>
+                    <span class="special-words">Data Flow.</span>.<br><br>
+                    Data flow means the way data flows from one node to another node. we will see three data flows:<br>
+                    Simplex, Half Duplex, and Full Duplex.<br><br>
+                    <span class="special-words">Simplex</span>.<br><br>
+                    The simplex communication is unidirectional or it is a one-way communication. one device can transmit and the other device will receive.<br>
+                    For example: your home TV can be a simplex example. you always see what the TV channel sends but you can't respond or send data back to the TV show at that time.<br>
+                    or Keyboard can be another example, you type on keyboard and the keyboard sends data as an input but there is no data coming back to the keyboard.  
+                </p>
+                <p>
+                    <span class="special-words">Half Duplex</span>.<br><br>
+                    In this situation, the communication is in both directions or we can say bidirectional, but not at the same time or simultaneously.<br>
+                    If one device sending, the other must wait and stay receiving until it gets a time or free channel to respond.<br>
+                    Walkie-Talkies are the most widely used as example of Half Duplex but ATMs can also be an example. because you can't respond to ATM while it is processing, you must wait until it finishes processing and asks you for input.
+                </p>
+               <p>
+                <span class="special-words">Full Duplex</span>.<br><br>
+                It is allmost same as Half Duplex but on Full Duplex the communication is simultaneously. which means Devices can send and receive at the same time.<br>
+                On the Telephone line we can talk simultaneously (at the same time), even if the communication gets unclear.
+               </p>
+               <p>
+                See Figure-01
+               </p>
+            </div>
+           <div class="diagram-card">
+                <img src="../image/data_communication.jpg" alt="" class="expandable-img">
+                <p>Figure-01</p>
+           </div>
+          
+           
+        </div>
+        <footer>
+            <div class="developer">&copy; <span id="year"> </span> Kaleab Tsegaye</div>
+            <div class="links">
+                <a href="https://github.com/yichuabT"><div class="github"><img src="../github-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://www.linkedin.com/in/Kaleab-tsegaye-691833449"><div class="linkden"><img src="../linkedin-round-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://t.me/yichuabT"><div class="telegram"><img src="../telegram-fill-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://x.com/yichuabT"><div class="twitter"><img src="../twitter-2-svgrepo-com.svg" alt=""></div></a>
+            </div>
+
+            <div class="goto-pages"><a href="#home">Back to top ↑</a></div>
+        </footer>
+    </article>
+
+
+    <div class="image-modal" id="imagemodal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <img id="expandedImage" src="" alt="">
+    </div>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

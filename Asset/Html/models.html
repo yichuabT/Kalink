@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="kalish networking teach">
+    <title>learn-networking</title>
+    <link rel="icon" type="image/png" href="../image/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../css/modules.css">
+    <link rel="stylesheet" href="../css/intro.css">
+</head>
+<body>
+    <article id="home">
+        <header>
+            <nav class="navbar">
+                <h1 class="logo">Kalink</h1>
+                <ul class="nav-menu">
+                    <li class="item"><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li class="item"><a href="../../modules.html" class="nav-link active">Modules</a></li>
+                    <li class="item"><a href="../../Resources.html" class="nav-link">Resource</a></li>
+                    <li class="item"><a href="../../questions.html" class="nav-link">Questions</a></li>
+                    <li class="item"><a href="../../about.html" class="nav-link">About</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <div class="models-option">
+            <a href="../Html/models.html"><h3 class="click-me">OSI</h3></a><a href="../Html/tcp-ip.html"><h3 class="click-me">TCP/IP</h3></a>
+        </div>
+        <div class="modules-container">
+            
+           <div class="main-card">
+                <h2>Computer Network Models.</h2>
+                <p>Network Model is a framework dividing network communication into layers, each with its own job and rule.<br>
+                And Layer is one stage in the model doing one job. It uses the layer below and serves the layer above.</p>
+            <p>In general there are two types of networking Models:<br> <span class="special-words">OSI(Open System Interconnection)</span> and
+                 <span class="special-words">TCP/IP(Transmission Control Protocol/Internet Protocol)</span>
+            </p>
+
+                <p>
+                    The famous <span class="special-words">OSI</span> model.<br><br>
+                   
+                   This model has 7 layers: 1. <span class="special-words">Application, </span>2. <span class="special-words">Presentation, 
+            </span>3. <span class="special-words">Session, </span>4. <span class="special-words">Transport, </span>5. <span class="special-words">Network, </span>
+            6. <span class="special-words">Data Link, </span>and 7. <span class="special-words">Physical.</span><br>
+            to remember this layers from layer one to seven easily use this example:<br>Please, Do, Not, Throw, Sausage, Pizza, Away.</p>
+            <h4>How data flows through each of 7 layers of OSI model?</h4>
+            <p>when the client makes request to the server, data will be generated at Application layer and the data will transfer keeping all layers order to Physical Layer.<br>
+            then on server side the data will keep the all layers order starting from Physical to Application layer so our request will get it's destination.</p>
+                <p>when the Server responds the server data goes down from Application to Physical layer.<br>
+                and then keeping all layers order, starting from Physical to Application layer so we will get the data what we requested for. </p>
+        
+            <p>
+                See Figure 01
+            </p>
+            </div>
+           <div class="diagram-card">
+                <img src="../image/network-model.jpg" alt="" class="expandable-img">
+                <p>Figure-01</p>
+           </div>
+          
+            <div class="main-card">
+            <p>Let's see the OSI model layer by layer.<br><br>
+            7. <span class="special-words">Application</span>: in non-technical terms it is simply user's application like Browsers.<br>
+            But technically it refers to application protocols<br> e.g. HTTP, SMTP... which facilitate communication between our application and operating system.</p>
+            <p>
+            6. <span class="special-words">Presentation</span>: it provides variety of coding and conversion functions on Application data to ensure the information sent from application layer to be understood.<br><br>
+                Main functions are: data conversion, data encryption and data compression.<br>
+                And protocols are: MIDI, GIF, TIF, PNG, JPEG, ASCII . . . .
+            </p>
+
+            <p>
+                5. <span class="special-words">Session</span>: it's main job is to establish, manage and terminate connections between the sender and the receiver.<br>
+                It is very important because the data will not go anywhere without it.
+            </p>
+            <p>
+                4. <span class="special-words">Transport</span>: it receive the data from Session layer and divide the data into smaller segments.<br>
+                Then it adds information like: Destination port number, Source port number and the Sequence number that used by receiver to put segments back in order.<br>
+                The main protocols are: <span class="special-words">TCP</span> and <span class="special-words">UDP</span>.  you can understand what are they in PROTOCOL module in detail.
+            </p>
+            <p>
+                3. <span class="special-words">Network</span>: its function is Logical addressing, Routing and Path determination.<br>
+                In network layer IP addressing is called logical addressing. Network layer assigns sender and receiver IP address for every segments to form IP packet.<br>
+                <br>Routing is a method to move a data packet from source to destination.<br>
+                <br>Choosing the best possible path to delivery from source to destination is called path determination
+            </p>
+            <p>
+                2. <span class="special-words">Data Link</span>: it receives data packet from Network layer. As logical addressing done in Network layer, Data link layer works on physical addressing which is about MAC addressing.<br>
+                MAC address are assigned to each data packets to form a frame. the two basic tasks of Data Link layer is Access the Media (using the technique Framing) and Controlling how data is placed and received from the medial
+                (by using Media Access Control and Error Detection)
+            </p>
+            <p>
+                1. <span class="special-words">Physical</span>: protocols at physical layer accepts frames from the data link layer and generates bits.<br>
+                The basic goal of this layer is to build a physical connection between devices and transporting bits(1s,0s).
+            </p>
+            <p>
+                See Figure 02
+            </p>
+            </div>
+           <div class="diagram-card">
+                <img src="../image/network-layers.jpg" alt="" class="expandable-img">
+                <p>Figure-02</p>
+           </div>
+        </div>
+        <footer>
+            <div class="developer">&copy; <span id="year"> </span> Kaleab Tsegaye</div>
+            <div class="links">
+                <a href="https://github.com/yichuabT"><div class="github"><img src="../github-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://www.linkedin.com/in/Kaleab-tsegaye-691833449"><div class="linkden"><img src="../linkedin-round-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://t.me/yichuabT"><div class="telegram"><img src="../telegram-fill-svgrepo-com.svg" alt=""></div></a>
+                <a href="https://x.com/yichuabT"><div class="twitter"><img src="../twitter-2-svgrepo-com.svg" alt=""></div></a>
+            </div>
+
+            <div class="goto-pages"><a href="#home">Back to top ↑</a></div>
+        </footer>
+    </article>
+
+
+    <div class="image-modal" id="imagemodal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <img id="expandedImage" src="" alt="">
+    </div>
+
+    <script src="../../script.js"></script>
+</body>
+</html>
